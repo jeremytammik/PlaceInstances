@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Place Family Instances</Text>
+    <Description>Place family instances at locations read from selected text file</Description>
+    <Assembly>PlaceInstances.dll</Assembly>
+    <FullClassName>PlaceInstances.Command</FullClassName>
+    <ClientId>51fc01e7-69f0-4988-aa93-5e17a0cc4336</ClientId>
+    <VendorId>TBC_</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

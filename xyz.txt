@@ -1,0 +1,16 @@
+# xyz.txt
+# family instance placement coordinates in feet
+# any two or three real numbers with any separators you like are acceptable
+
+1 2 3
+1 2
+1
+1,2,3
+1,2
+1
+2 2 0
+3 3 0
+4 4 0
+5.5 5.5 0
+-2, -2, 0
+-3, -3
