@@ -212,7 +212,7 @@ namespace PlaceInstances
       {
         s = line.Trim();
 
-        if( s.StartsWith( "#" ) )
+        if( 0 == s.Length || s.StartsWith( "#" ) )
         {
           continue;
         }

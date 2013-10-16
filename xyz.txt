@@ -12,5 +12,12 @@
 3 3 0
 4 4 0
 5.5 5.5 0
+
+# Test negative Y coordinates
+
 -2, -2, 0
 -3, -3
+
+# Test placement at origin
+
+0 0 0
