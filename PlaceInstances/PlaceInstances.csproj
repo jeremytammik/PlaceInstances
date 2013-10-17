@@ -79,7 +79,8 @@
     <None Include="..\LICENSE">
       <Link>LICENSE</Link>
     </None>
-  </ItemGroup>  <ItemGroup>
+  </ItemGroup>  
+  <ItemGroup>
     <None Include="PlaceInstances.addin" />
   </ItemGroup>
   <ItemGroup>
