@@ -164,7 +164,9 @@ namespace PlaceInstances
 
       Family f = cb.SelectedItem as Family;
 
-      FamilySymbolSet symbols = f.Symbols;
+      //FamilySymbolSet symbols = f.Symbols; // 2014
+
+      ISet<ElementId> ids = f.GetFamilySymbolIds(); // 2018
 
       // I have to convert the FamilySymbolSet to a
       // List, or the DataSource assignment will throw 
@@ -172,9 +174,16 @@ namespace PlaceInstances
       // accepts as a data source either an IList or
       // an IListSource.
 
+      //List<FamilySymbol> symbols2
+      //  = new List<FamilySymbol>(
+      //    symbols.Cast<FamilySymbol>() ); // 2014
+
+      Document doc = f.Document;
+
       List<FamilySymbol> symbols2
-        = new List<FamilySymbol>(
-          symbols.Cast<FamilySymbol>() );
+        = new List<FamilySymbol>( 
+          ids.Select<ElementId, FamilySymbol>( id 
+            => doc.GetElement( id ) as FamilySymbol ) ); // 2018
 
       cmbType.DataSource = symbols2;
       cmbType.DisplayMember = "Name";
